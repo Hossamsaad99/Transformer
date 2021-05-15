@@ -13,6 +13,7 @@ from utils.Time2Vector import Time2Vector
 from utils.Attention import MultiAttention, SingleAttention
 from utils.Encoder import TransformerEncoder
 from tensorflow import keras
+from keras.models import load_model
 
 def Transformer(ticker):
   seq_len = 32
