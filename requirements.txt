@@ -9,4 +9,5 @@ pydantic
 pandas_datareader
 tensorflow-cpu
 keras
+custom_object_scope
 datetime
