@@ -8,4 +8,4 @@ uvloop
 httptools
 pydantic
 pandas_datareader
-tensorflow-gpu
+tensorflow-cpu
