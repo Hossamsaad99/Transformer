@@ -12,6 +12,7 @@ from utils.Time2Vector import Time2Vector
 from utils.Attention import MultiAttention, SingleAttention
 from utils.Encoder import TransformerEncoder
 from tensorflow import keras
+from keras.utils import custom_object_scope
 from keras.models import load_model
 
 def Transformer(ticker):
@@ -41,7 +42,7 @@ def Transformer(ticker):
   custom_objects = {"Time2Vector": Time2Vector,
                     "MultiAttention": MultiAttention,
                     'TransformerEncoder': TransformerEncoder}
-  with keras.utils.custom_object_scope(custom_objects):
+  with custom_object_scope(custom_objects):
       final_model = load_model('Transformer+TimeEmbedding.hdf5')
 
   trans_prediction = float(final_model.predict(X_test)[-1])
