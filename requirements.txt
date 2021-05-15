@@ -1,5 +1,5 @@
 numpy
-scikit-learn
+scikit-learn==0.23.2
 pandas
 fastapi
 uvicorn
@@ -7,9 +7,5 @@ gunicorn
 uvloop
 httptools
 pydantic
-pmdarima
 pandas_datareader
-pystan
-prophet
-tensorflow
-keras
+tensorflow-gpu
