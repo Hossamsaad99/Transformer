@@ -7,7 +7,6 @@ import pydantic
 from datetime import *
 import pandas_datareader as pdr
 import numpy as np
-import pandas as pd
 # for transformer
 from utils.Time2Vector import Time2Vector
 from utils.Attention import MultiAttention, SingleAttention
